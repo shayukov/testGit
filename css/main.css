@@ -1,9 +1,59 @@
-body {
-  background-color: aquamarine;
+.grid-container {
+  display: grid;
+  border: 2px solid red;
+  grid-template-columns: 1fr 3fr 2fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  
 }
-h1 {
-  color: grey;
+.item h3 {
+  font-size: 45px;
 }
-h2 {
-  color: rgb(170, 51, 51);
+.item {
+}
+.item-1 {
+  background: gray;
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item-1 i {
+  font-size: 100px;
+  color: rgb(217, 22, 22);
+}
+.item-1 .fa-user-tie {
+  color: rgb(22, 35, 217);
+}
+.item-2 {
+  background: rgb(192, 207, 23);
+  grid-row: 2 / 5;
+  text-align: center;
+}
+.item-2 i {
+  font-size: 100px;
+  color: rgb(22, 35, 217);
+}
+.item-3 {
+  background: gray;
+}
+.item-4 {
+  background: rgb(192, 207, 23);
+}
+.item-5 {
+    background: gray;
+}
+.item-6 {
+    background: rgb(192, 207, 23);
+}
+.item-7 {
+    background: gray;
+}
+.item-8 {
+    background: rgb(192, 207, 23);
+}
+.item-9 {
+    background: gray;
+    grid-column: 1 / 4;
 }
